@@ -1,0 +1,35 @@
+{
+  "name": "tiny-image2webp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dangvanthanh/tiny-image2webp.git"
+  },
+  "author": "Dang Van Thanh <chieuhue@gmail.com> (dangthanh.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dangvanthanh/tiny-image2webp/issues"
+  },
+  "homepage": "https://github.com/dangvanthanh/tiny-image2webp#readme",
+  "dependencies": {
+    "imagemin": "^6.0.0",
+    "imagemin-webp": "^4.1.0"
+  },
+  "devDependencies": {
+    "husky": "^1.1.0",
+    "lint-staged": "^7.3.0"
+  },
+  "husky": {
+    "hook": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": ["git add"]
+  }
+}
